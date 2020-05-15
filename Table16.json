@@ -1,0 +1,250 @@
+
+{
+   "name" : "Table16 ",
+   "title": " Structure of trade to have access to the resources needed for a decent standard of living ",
+   "description" :"World Bank 2007, based on data from UNCTAD ; aggregates calculated for HDRO by the World Bank.",
+    "fields" :  [
+
+
+        { 
+
+            "name": "HDIRank",
+            "title":"HDI rank",
+            "type":"integer",
+            "description":"HDI rank of the countrieS",
+            "constraints":{
+			
+			    "mininum":1,
+				
+				"maximum":177,
+				
+			     "unique":true
+                           
+						   
+						   }
+            
+        },
+
+        { 
+
+            "name": "HDL",
+            "title":"Human Development Level(HDL)",
+            "type":"array",
+            "description":"Human Development Level of all the countries from those who have the highest human devolpment level to those who have  the lowest human development",
+            "constraints":{  
+			
+			     "enum":[ 
+                
+                
+                "High","Medium","Low"
+
+
+                       ]
+
+
+
+
+
+
+
+                         }
+
+        },
+
+        { 
+
+            "name": "Countries",
+            "title":"Countries",
+            "type":"string",
+            "description":"Name  of the countries",
+            "constraints":{
+			
+			    "maxLength":4,
+		
+				 
+                "required":true
+
+
+                          }
+
+
+        },
+
+        { 
+
+            "name": "Imports1990",
+            "title":"Imports of goods and services 1990 ",
+            "type":"integer",
+            "description" : "imports of goods and services ; annee 1990",
+			"constraints":{
+			
+			
+                 "mininum":1
+				 
+				            }
+            
+        },
+
+        { 
+
+            "name": "Imports2005",
+            "title":"Imports of goods and services 2005",
+            "type":"integer",
+            "description" : "imports of goods and services ; annee 2005",
+			"constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+        },
+		
+        { 
+
+            "name": "Exports1990",
+            "title":"Exports of goods and services",
+            "type":"integer",
+            "description" : "Exports  of goods and services ",
+            "constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+        },
+
+        { 
+
+            "name": "Exports2005",
+            "title":"Exports of goods and services",
+            "type":"integer",
+            "description" : "Exports of goods and services ; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+        },
+
+        { 
+
+            "name": "Primary1990",
+            "title":"Primary exports 1990",
+            "type":"integer",
+            "description" : "primary exports ; annee 1990",
+            "constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+
+		},
+        
+		{ 
+
+            "name": "Primary2005",
+            "title":"Primary exports 2005",
+            "type":"integer",
+            "description" : "primary exports ; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+        },
+		
+		{ 
+
+            "name": "Manufactured1990",
+            "title":"Manufactured exports 1990",
+            "type":"integer",
+            "description" : "Manufactured exports ; annee 1990",
+            "constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+        },
+		
+		{ 
+
+            "name": "Manufactured2005",
+            "title":"Manufactured exports 2005",
+            "type":"integer",
+            "description" : "Manufactured exports ; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+        },
+		
+		{ 
+
+            "name": "HighTech1990",
+            "title":"High technology exports 1990",
+            "type":"Number",
+            "description" : "High technology exports; annee 1990",
+            "constraints":{ 
+			
+			
+                 "minimum":0
+				 
+				            }
+            
+        },
+ 
+        
+        {
+            "name": "HighTech2005",
+            "title":"High technology exports 2005",
+            "type":"Number",
+            "description" : "High technology exports; annee 2005",
+            "constraints":{ 
+			
+			
+                 "minimum":0
+				 
+				            }
+            
+        },
+	
+        {
+            "name": "TermsTrade",
+            "title":"Terms of trade",
+            "description":" terms of trade  pour l'annee 2004 a 2005",
+            "type":"integer",
+            "constraints":{ 
+			
+			
+                 "minimum":1
+				 
+				            }
+            
+        }
+
+ ],
+ 
+ "missingValues": [".."]
+
+
+
+
+
+
+
+
+
+}
